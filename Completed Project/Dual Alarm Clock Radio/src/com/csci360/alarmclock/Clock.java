@@ -15,7 +15,7 @@ public class Clock {
     
     private final int SNOOZETIME = 9;
 
-    public void Clock(){
+    public Clock(){
         hours = 12;
         minutes = 00;
         seconds = 00;
@@ -40,10 +40,6 @@ public class Clock {
     }
     
     public void setAlarm1(int hours1, int minutes1, boolean isPM1){
-       
-        
-        
-        
         alarm1 = new Alarm(1, hours1, minutes1, isPM1,false);
         
     }
@@ -123,8 +119,6 @@ public class Clock {
            
        }
        
-     
-       
        if(hours == 12 && minutes ==0 && seconds == 00 && isPM == true){
            this.setIsPM(false);  
        }
@@ -132,19 +126,10 @@ public class Clock {
            this.setIsPM(true);
        }
       
- 
        if(hours == 13){
            hours = 1;
            
-       }
-       
-         
-           
-       
-       
-       
-              
-         
+       }  
     }
     
     public boolean checkAlarm1(int hours,int minutes,int seconds,boolean isPM){
