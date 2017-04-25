@@ -12,7 +12,10 @@ public class Radio {
     private boolean isAM;
     private boolean isON;
     
-    
+    /**
+    *Constructor
+    *
+    */
     public Radio() {
         
         stationNumFM = 99.5;
